@@ -17,7 +17,7 @@
 		public function setup(mcVP:Sprite):void
 		{
 			FASTLog.instance().log('Platform AND');
-			new ControllerHighResViewPort(mcVP,0.5);
+			new ControllerHighResViewPort(mcVP,PlatformSetting.LOW_RES_SCALE);
 
 			if(Capabilities.cpuArchitecture=="ARM")
 			{

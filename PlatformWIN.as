@@ -12,7 +12,7 @@
 		public function setup(mcVP:Sprite):void
 		{
 			FASTLog.instance().log('Platform WIN');
-			new ControllerHighResViewPort(mcVP,0.5);
+			new ControllerHighResViewPort(mcVP,PlatformSetting.LOW_RES_SCALE);
 		}
 
 	}
