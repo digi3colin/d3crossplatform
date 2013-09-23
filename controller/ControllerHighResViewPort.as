@@ -2,6 +2,7 @@
 	import com.fastframework.log.FASTLog;
 
 	import flash.display.Sprite;
+	import flash.display.StageQuality;
 	import flash.system.Capabilities;
 	/**
 	 * @author Digi3Studio - Colin Leung
@@ -12,9 +13,11 @@
 			if(Capabilities.screenResolutionX>320&&Capabilities.screenDPI>200){
 				FASTLog.instance().log('using HighDPI', FASTLog.LOG_LEVEL_DETAIL);
 				mcVP.scaleX = mcVP.scaleY = 1;
+				mcVP.stage.quality = StageQuality.MEDIUM;
 			}else{
 				FASTLog.instance().log('using LowDPI', FASTLog.LOG_LEVEL_DETAIL);
 				mcVP.scaleX = mcVP.scaleY = lowResScale;
+				mcVP.stage.quality = StageQuality.HIGH;
 			}
 		}
 	}
