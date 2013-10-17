@@ -4,6 +4,6 @@ package com.fastframework.module.d3crossplatform {
 	 */
 	public class PlatformSetting {
 		public static var APP_FOLDER : String = "./";
-		public static var LOW_RES_SCALE:Number = 1;
+		public static var LOW_RES_SCALE:Number = 0.5;
 	}
 }
